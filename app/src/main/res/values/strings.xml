@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tugas</string>
+    <string name="labelApp1">PENDAFTARAN</string>
+    <string name="labelApp2">Pendafataran Berhasil</string>
+    <string name="nd">Nama Depan</string>
+    <string name="nb">Nama Belakang</string>
+    <string name="tgl">Tanggal Lahir</string>
+    <string name="tempat">Tempat Lahir</string>
+    <string name="almt">Alamat</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="agama">Agama</string>
+    <string name="tlp">Telpon</string>
+    <string name="em">Email</string>
+    <string name="ps">Password</string>
+    <string name="ps2">Masukkan Password Kembali</string>
+    <string name="btn1">Kembali</string>
+    <string name="btn2">Daftar</string>
+    <string name="invalid_nama">Nama Depan Harus Diisi</string>
+    <string name="invalid_namaBlkg">Nama Belakang Harus Diisi</string>
+    <string name="invalid_tmptLahir">Tempat Lahir Harus Diisi</string>
+    <string name="invalid_tglLahir">Tanggal Lahir Harus Diisi</string>
+    <string name="invalid_almt">Alamat Harus Diisi</string>
+    <string name="invalid_tlpn">Nomor Telfon Harus Diisi</string>
+    <string name="invalidEml">Email Harus Diisi</string>
+    <string name="invalid_pswd">Password Harus Diisi</string>
+</resources>

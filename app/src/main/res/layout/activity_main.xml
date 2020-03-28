@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/blokluar">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:layout_margin="10dp"
+                android:background="@color/blokdlm">
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/labelApp1"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:textStyle="italic" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/namaDpn"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/nd"
+                            android:textSize="14dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/namaBlkg"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/nb"
+                            android:textSize="14dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tmptLhr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tempat"
+                            android:textSize="14dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tglLahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tgl"
+                            android:clickable="true"
+                            android:textSize="14dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </TableRow>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/almt"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:hint="@string/almt"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/jk"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:textSize="8dp"
+                    android:hint="@string/jk"/>
+
+<!--                <TableRow-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="match_parent" >-->
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:text="Laki-laki">
+                        </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-34dp"
+                        android:layout_marginLeft="185dp"
+                        android:text="Perempuan">
+
+                    </RadioButton>
+
+                </RadioGroup>
+<!--                </TableRow>-->
+
+                <TextView
+                    android:id="@+id/agama"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:textSize="8dp"
+                    android:hint="@string/agama"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+<!--                    <TableRow-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_width="match_parent" >-->
+
+                        <RadioButton
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:text="Islam">
+
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-34dp"
+                            android:layout_marginLeft="185dp"
+                            android:text="Kristen"></RadioButton>
+
+<!--                    </TableRow>-->
+
+<!--                    <TableRow-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_width="match_parent" >-->
+                        <RadioButton
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:text="Katolik">
+
+                        </RadioButton>
+                        <RadioButton
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-34dp"
+                            android:layout_marginLeft="185dp"
+                            android:text="Hindu">
+                        </RadioButton>
+
+<!--                    </TableRow>-->
+<!--                    <TableRow-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_width="match_parent" >-->
+                        <RadioButton
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:text="Buddha">
+
+                        </RadioButton>
+                        <RadioButton
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-34dp"
+                            android:layout_marginLeft="185dp"
+                            android:text="Konghucu">
+                        </RadioButton>
+<!--                    </TableRow>-->
+
+                    <RadioButton
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="Aliran Kepercayaan">
+                    </RadioButton>
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tlpn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/tlp"
+                        android:inputType="number"
+                        android:textSize="14dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/eml"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/em"
+                        android:textSize="14dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pswd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ps"
+                        android:textSize="14dp"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pswd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ps2"
+                        android:textSize="14dp"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn1"
+                    android:background="@drawable/button"/>
+
+                <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn2"
+                        android:background="@drawable/button"/>
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>/>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

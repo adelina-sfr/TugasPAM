@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Data_Peserta">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            android:background="@color/blokluar">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:layout_margin="10dp"
+                android:background="@color/blokdlm">
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/labelApp2"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/ND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Nama Depan :"/>
+                <TextView
+                    android:id="@+id/HslND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/NB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Nama Belakang: "/>
+                <TextView
+                    android:id="@+id/HslNB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/TTL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Tempat Tanggal Lahir :"/>
+                <TextView
+                    android:id="@+id/HslTTL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/JK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Jenis Kelamin:"/>
+                <TextView
+                    android:id="@+id/HslJk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/agm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Agama: "/>
+                <TextView
+                    android:id="@+id/HslAgm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/tlpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/tlp"/>
+                <TextView
+                    android:id="@+id/HslTpln"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/eml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Email: "/>
+                <TextView
+                    android:id="@+id/HslEml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""/>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
