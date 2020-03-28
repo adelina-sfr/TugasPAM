@@ -3,8 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="blokdlm">#cef5f4</color>
-    <color name="blokluar">#7a9a9a</color>
+    <color name="blokdlm">#c2ffe8</color>
+    <color name="blokluar">#feffc2</color>
     <color name="labelApp">#010203</color>
-    <color name="green">#007f5c</color>
+    <color name="green">#3dff1a</color>
 </resources>

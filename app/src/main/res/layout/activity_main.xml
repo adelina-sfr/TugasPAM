@@ -90,8 +90,6 @@
                             android:textSize="14dp"/>
                     </com.google.android.material.textfield.TextInputLayout>
                 </TableRow>
-
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">

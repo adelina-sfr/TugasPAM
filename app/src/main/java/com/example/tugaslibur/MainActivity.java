@@ -13,6 +13,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -31,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
     DatePickerDialog.OnDateSetListener date;
     TextInputEditText txt_tgl;
     EditText namaDpn, namaBlkg, tglLahir, tmptLahir, almt, tlpn, eml, pswd;
-   // EditText HslND, HslBG,HslTTL,HslAlmt,HslAgm,HslTpln,HslEml;
-
 
     Button btn2;
     AwesomeValidation awesomeValidation;
@@ -91,20 +90,12 @@ public class MainActivity extends AppCompatActivity {
 
         awesomeValidation.addValidation(this,R.id.eml, //nambahin format email hrus ada @ sama .com
                 Patterns.EMAIL_ADDRESS,R.string.invalidEml);
-
-
-
-
-            awesomeValidation.addValidation(this, R.id.pswd,//nambahin format password spesifiknya gimna
+        awesomeValidation.addValidation(this, R.id.pswd,//nambahin format password spesifiknya gimna
                     RegexTemplate.NOT_EMPTY, R.string.invalid_pswd);
 
 //            String regexPassword = "(?=.*[a-z])(?=.*[A-Z])(?=.*[\\d])(?=.*[~`!@#\\$%\\^&\\*\\(\\)\\-_\\+=\\{\\}\\[\\]\\|\\;:\"<>,./\\?]).{8,}";
-//
 //            awesomeValidation.addValidation(this, R.id.pswd,//nambahin format password spesifiknya gimna
 //                    regexPassword, R.string.invalid_pswd);
-
-
-
 
         btn2.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -113,43 +104,16 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),
                             "Berhasil Didaftarkan",Toast.LENGTH_SHORT).show();
                     openHasil(
-
                     );
-
                 }else {
                     Toast.makeText(getApplicationContext(),
                             "Data faild",Toast.LENGTH_SHORT).show();
-
                 }
-
             }
         });
 
-//        HslND = findViewById(R.id.namaDpn);
-//        HslBG = findViewById(R.id.namaBlkg);
-//        HslTTL = findViewById(R.id.tglLahir);
-//        HslAlmt = findViewById(R.id.almt);
-//        HslTpln = findViewById(R.id.tlpn);
-//        HslEml = findViewById(R.id.eml);
-//        Button btn2 = findViewById(R.id.btn2);
-//        btn2.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                if(HslND.getText().toString().equals("")
-//                        || HslBG.getText().toString().equals("")
-//                        || HslAlmt.getText().toString().equals("")
-//                        || HslTTL.getText().toString().equals(""));
-//            }else{
-//                String NamaDepan = getString()
-//
-//            }
-//        });
-
-        //nyatuin ttl gimna?
-
-
-
     }
+
     public void openHasil(){
         Intent intent = new Intent(this,Data_Peserta.class);
         startActivity(intent);
